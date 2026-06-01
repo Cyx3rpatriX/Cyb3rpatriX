@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👾 Cyb3rpatriX
+# 👾 Cyb3rpatriX [CyX]
 
 ```bash
 > whoami
