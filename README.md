@@ -23,9 +23,9 @@ Future Security Engineer
 
 ```bash
 Name        : Cyb3rpatriX
-Role        : Security Researcher
+Role        : ---
 Location    : Earth
-Focus       : Cybersecurity, AI/ML, OSINT
+Focus       : Cybersecurity, AI/ML, OSINT, Engineering 
 Editor      : Neovim
 OS          : Linux
 Status      : Learning Something New Every Day
