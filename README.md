@@ -54,7 +54,7 @@ Currently mastering:
 
 ---
 
-# $ cat skill_matrix.txt
+# $ cat skills.txt
 
 ```text
 █████████████████████░░░ Python
