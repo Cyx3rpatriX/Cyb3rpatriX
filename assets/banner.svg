@@ -1,0 +1,80 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#05070B"/>
+      <stop offset="60%" stop-color="#0B121C"/>
+      <stop offset="100%" stop-color="#060A12"/>
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4DE8FF" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#12505C" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#12505C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4DE8FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#4DE8FF" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4DE8FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bgGrad)"/>
+
+  <!-- horizon glow -->
+  <ellipse cx="600" cy="192" rx="620" ry="34" fill="url(#glowGrad)">
+    <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4.5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- faint upper sky lines (subtle depth, not a full mirrored grid) -->
+  <g stroke="#12505C" stroke-opacity="0.18" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="110" x2="1200" y2="110"/>
+  </g>
+
+  <!-- perspective floor grid -->
+  <g stroke="#12505C" stroke-opacity="0.55" stroke-width="1">
+    <line x1="600" y1="192" x2="0" y2="300"/>
+    <line x1="600" y1="192" x2="150" y2="300"/>
+    <line x1="600" y1="192" x2="330" y2="300"/>
+    <line x1="600" y1="192" x2="470" y2="300"/>
+    <line x1="600" y1="192" x2="600" y2="300"/>
+    <line x1="600" y1="192" x2="730" y2="300"/>
+    <line x1="600" y1="192" x2="870" y2="300"/>
+    <line x1="600" y1="192" x2="1050" y2="300"/>
+    <line x1="600" y1="192" x2="1200" y2="300"/>
+  </g>
+  <g stroke="#4DE8FF" stroke-opacity="0.22" stroke-width="1">
+    <line x1="40" y1="205" x2="1160" y2="205"/>
+    <line x1="10" y1="222" x2="1190" y2="222"/>
+    <line x1="0" y1="245" x2="1200" y2="245"/>
+    <line x1="0" y1="272" x2="1200" y2="272"/>
+  </g>
+
+  <!-- horizon line, bright -->
+  <line x1="0" y1="192" x2="1200" y2="192" stroke="#8FF3FF" stroke-opacity="0.8" stroke-width="1.4" filter="url(#glowSoft)"/>
+
+  <!-- scanline sweep -->
+  <rect x="0" y="0" width="1200" height="90" fill="url(#scanGrad)">
+    <animateTransform attributeName="transform" type="translate" values="0 -90; 0 300; 0 -90" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- wordmark -->
+  <text x="600" y="168" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="58" font-weight="700" letter-spacing="16" fill="#EAFBFF" filter="url(#glow)">CYX</text>
+
+  <!-- HUD details -->
+  <text x="24" y="284" font-family="'JetBrains Mono',Consolas,monospace" font-size="12" letter-spacing="2" fill="#4DE8FF" fill-opacity="0.7">SYSTEM :: ONLINE</text>
+  <text x="1176" y="284" text-anchor="end" font-family="'JetBrains Mono',Consolas,monospace" font-size="12" letter-spacing="2" fill="#4DE8FF" fill-opacity="0.7">GRID://CYX</text>
+</svg>
