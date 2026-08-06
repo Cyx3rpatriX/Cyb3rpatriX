@@ -10,7 +10,7 @@
 
 ![Status](https://img.shields.io/badge/STATUS-ACTIVE-00FFF2?style=for-the-badge&labelColor=0a0014)
 ![Focus](https://img.shields.io/badge/FOCUS-AI%20×%20SECURITY-FF2E88?style=for-the-badge&labelColor=0a0014)
-![Build](https://img.shields.io/badge/BUILDS-ON%20TERMUX-7B2FF7?style=for-the-badge&labelColor=0a0014)
+![Build](https://img.shields.io/badge/BUILDS-ON%20LINUX-7B2FF7?style=for-the-badge&labelColor=0a0014)
 
 </div>
 
@@ -99,16 +99,14 @@
 
 </div>
 
-> ⚠️ Replace `cyx3rkeys` / `portfolio` above with your real repo names once pinned — pin cards only render for existing public repos.
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFF2,100:FF2E88&height=3&width=100%"/>
 
 ## 📶 UPLINK
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GITHUB-0a0014?style=for-the-badge&logo=github&logoColor=00FFF2)](https://github.com/CYX)
-[![Email](https://img.shields.io/badge/EMAIL-0a0014?style=for-the-badge&logo=protonmail&logoColor=FF2E88)](mailto:david@cyx.dev)
+[![GitHub](https://img.shields.io/badge/GITHUB-0a0014?style=for-the-badge&logo=github&logoColor=00FFF2)](https://github.com/Cyx3rpatriX)
+[![Email](https://img.shields.io/badge/EMAIL-0a0014?style=for-the-badge&logo=protonmail&logoColor=FF2E88)](mailto:cyx3rpatrix@gmail.com)
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-0a0014?style=for-the-badge&logo=firefox&logoColor=7B2FF7)](#)
 
 <br/><br/>
